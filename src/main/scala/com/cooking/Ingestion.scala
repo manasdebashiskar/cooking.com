@@ -75,6 +75,7 @@ object Ingestion {
    * This function shall send stats for each recipe to openTSDB.
    * By sending the stats to openTSDB and doing rollup and pre-aggregation
    * we can get answers to queries like number of updates over hours etc.
+   * http://opentsdb.net/docs/build/html/user_guide/rollups.html
    * @param input: DataFrame is the input whose stats are sent out
    * @param: config: Config provides config for openTSDB connection
    * @return Unit
