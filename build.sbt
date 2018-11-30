@@ -25,8 +25,8 @@ lazy val root = (project in file(".")).
         "com.github.scopt" %% "scopt" % "3.7.0",
         "com.holdenkarau" %% "spark-testing-base" % "1.6.0_0.9.0" % "test",
         "org.scalatest" %%   "scalatest" % "2.2.4" % "test",
-        "com.lucidworks.spark" % "spark-solr" % "2.4.0",
-        "com.cgnal.spark" %% "spark-opentsdb" % "1.0"
+        "com.lucidworks.spark" % "spark-solr" % "2.4.0"
+        //"com.cgnal.spark" %% "spark-opentsdb" % "1.0"
       )
   )
 

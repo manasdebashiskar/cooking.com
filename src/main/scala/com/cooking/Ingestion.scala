@@ -60,6 +60,7 @@ object Ingestion {
    * This function writes the data frame to solr based on the configuration.
    * @param input: DataFrame is the entity pushed to Solr
    * @param config: Config is the configuration that provides solr connection.
+   * @return Unit
    * Assumption the collection is created and schema is provided.
    * Alternatively we can have ManagedIndexSchemaFactory enabled.
    */
@@ -69,4 +70,14 @@ object Ingestion {
     input.write.format("solr").options(solrConfig).mode(SaveMode.Overwrite).save
 
   }
+
+  /**
+   * This function shall send stats for each recipe to openTSDB.
+   * By sending the stats to openTSDB and doing rollup and pre-aggregation
+   * we can get answers to queries like number of updates over hours etc.
+   * @param input: DataFrame is the input whose stats are sent out
+   * @param: config: Config provides config for openTSDB connection
+   * @return Unit
+   */
+  def sendStats(input:DataFrame, config: Config) = ???
 }
