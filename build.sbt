@@ -67,9 +67,6 @@ mappings in Universal ++= {
     startScript -> s"bin/$startScriptName",
     stopScript -> s"bin/$stopScriptName",
     restartScript -> s"bin/$restartScriptName",
-    startScript -> s"bin/$startScriptName",
-    stopScript -> s"bin/$stopScriptName",
-    restartScript -> s"bin/$restartScriptName",
     settings -> s"bin/$settingsScriptName"
     )
 }
