@@ -16,7 +16,7 @@ The command to test the program is `sbt test`
 
 The command to create an assembly is `sbt assembly`
 
-## universal Package
+## Universal Package
 
 This project is designed to produce an `zip` package from the assembly structure.
 
